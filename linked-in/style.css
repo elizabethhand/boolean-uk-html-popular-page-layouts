@@ -1,0 +1,58 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  display: grid;
+  text-align: center;
+  grid-template:
+    "header header header" 50px
+    "profile writepost news" 50px
+    "profile posts news" 50px
+    "groups posts mostviewed" 50px
+    "groups posts mostviewed" 50px
+    ". posts advert" 50px
+    ". posts ." 50px/
+    1fr 3fr 2fr;
+}
+
+.header {
+  grid-area: header;
+  background-color: paleturquoise;
+}
+
+.profile {
+  grid-area: profile;
+  background-color: palegreen;
+}
+
+.writepost {
+  grid-area: writepost;
+  background-color: palevioletred;
+}
+
+.news {
+  grid-area: news;
+  background-color: palegoldenrod;
+}
+
+.groups {
+  grid-area: groups;
+  background-color: blueviolet;
+}
+
+.posts {
+  grid-area: posts;
+  background-color: yellowgreen;
+}
+
+.mostviewed {
+  grid-area: mostviewed;
+  background-color: pink;
+}
+
+.advert {
+  grid-area: advert;
+  background-color: green;
+}
